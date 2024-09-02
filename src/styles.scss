@@ -1,3 +1,4 @@
+
 @import "./sass/vendors/bootstrap.scss";
 
 @import "./sass/abstracts/mixins";
@@ -16,3 +17,53 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+
+
+:root{
+  --primary-color:#edf2fc;
+  --secondary-color: #212121;
+}
+
+.navbar {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: var(--primary-color); /* Optional, to ensure the navbar is visible */
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    color: #34e3ba;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  li {
+    display: inline; /* Ensure list items are displayed inline */
+    margin: 0 10px; /* Space between items */
+    
+    a {
+      color: #34e3ba; /* Set the color of the links */
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #06755b; /* Color on hover */
+      }
+    }
+  }
+  #icon{
+    width: 30px;
+    cursor: pointer;
+  }
+}
